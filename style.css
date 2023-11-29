@@ -1,0 +1,339 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0 50px 70px 50px;
+}
+
+.mx-auto{
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+nav{
+ width: 95%;
+}
+
+.gradient {
+ background: radial-gradient(circle, #82daf7, rgb(242, 201, 243));
+}
+
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.d-block {
+  display: block;
+  width: fit-content;
+}
+
+
+/* перезаписанный блок */
+.custom-background {
+  position: relative;
+  margin-top: -12px; /* Adjust as needed */
+}
+
+.custom-background svg {
+  width: 100%;
+  height: auto;
+}
+
+img.hero{
+  height: 450px;
+  width: 430px;
+  position: relative;
+  top: 53px; left: 150px;
+}
+
+p.uppercase{ /*Лендинги, Сайты-визитки, Многостраничные сайты,тд*/
+  text-align: start;
+  margin-top: 70px;
+  }
+
+  p.text-gray-500{
+    margin-top: 10px;
+  }
+/* блок с работами */
+.cards {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 10px;
+ color: #171414;
+  
+  }
+
+.card2__title{
+  margin-bottom: 10px;
+   } 
+
+.card1__image{
+width: 270px;
+height: 700px;
+margin: 0 auto;
+}
+
+.card2__image{
+margin: 10px;
+width: inherit;
+margin: 0 auto;
+}
+
+.card3__image{
+margin: 0 auto;
+margin: 20px;
+width: 300px;
+}
+
+.card4__image{
+  margin: 0 auto;
+  width: 300px;
+  }
+
+.card5__image{
+  grid-column: 3/5;
+    margin: 0 auto;
+    width: calc(100%/2);
+    }
+
+  .card__suptitle {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+p.card__title {
+  font-size: 16px;
+  text-align: start;
+}
+
+.card__image {
+  margin-top: 10px;
+}
+
+h1.my-4{
+  text-align: start;
+  }
+
+
+ /* адаптив блока работ */
+@media (max-width: 539px) { 
+  body{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  nav{
+    width: 100%;
+    }
+
+  img.hero{   /* мое фото */
+    height: 160px;
+    width: 180px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 245px; 
+    margin-left: 60px; 
+    }
+  
+  .firstBlock{
+    height: 60vh;
+  }
+
+   /* блок обо мне */
+  .text-5xl {
+    font-size: 1.5rem;
+    }
+
+  .text-3xl {
+      font-size: 1.15rem;
+    }
+
+    /* work */
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h1.my-4{
+    text-align: center;
+    font-size: 16px;
+  }
+  p.uppercase{ /*Лендинги, Сайты-визитки, Многостраничные сайты,тд*/
+    font-size: 10px;
+    text-align: center;
+    line-height: 14px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    }
+  
+    p.text-gray-500{
+      margin-top: 10px;
+    }
+
+  .leading-normal{ /* Я еще не волшебник, зато лендинг по выгодной цене сделаю с удовольствием. */
+    font-size: 12px;
+    line-height: 1rem;
+    }
+
+ /* footer иконки */
+  .flex {
+    display: flex;
+    align-content: stretch;
+    align-items: center;
+    margin-top: 5px;
+  }
+  .flex-container {
+    width: 100%;
+    display: flex;
+    padding: 4px 0;
+  }
+}
+
+
+@media (min-width: 540px) and (max-width: 765px) { 
+
+
+}
+@media (min-width: 766px) and (max-width: 992px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+   /* мое фото */
+   img.hero {
+    height: 470px;
+    width: 450px;
+    position: relative;
+    top: 95px; left: 30px;
+  }
+
+}
+
+
+
+@media (min-width: 993px) and (max-width: 1100px) {
+  /* мое фото */
+  img.hero {
+    height: 470px;
+    width: 450px;
+    position: relative;
+    top: 94px; left: 30px;
+  }
+
+}
+
+
+
+
+
+
+/* ________конец адаптива________ */
+footer {
+  background-color: white;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+.flex-container {
+  width: 80%;
+  display: flex;
+  padding: 24px 0;
+  margin-left: 20px;
+}
+
+.text-black {
+  color: black;
+}
+
+a {
+  color: #e671a0;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 2xl;
+  line-height: 1;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ff6bcb;
+}
+
+svg {
+  height: 32px;
+  fill: currentColor;
+  display: inline;
+}
+
+/* текст в верхнем регистре  */
+.uppercase {
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.text-gray-500 {
+  color: #a0aec0;
+}
+
+.list-reset {
+  list-style: none;
+}
+
+.mt-2 {
+  margin-top: 8px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.mr-2 {
+  margin-right: 8px;
+}
+
+.hover:underline:hover {
+  text-decoration: underline;
+}
+
+.text-gray-800 {
+  color: #2d3748;
+}
+
+.hover:text-pink-500:hover {
+  color: #ff6bcb;
+}
+
+.firstBlock, #header{
+background: radial-gradient(circle, #82daf7, rgb(242, 201, 243));
+}
+
+.fill-current, .mr-3, .list-reset{
+  color: aliceblue;
+}
+
+.mail p {
+  color: #2d3748;
+}
+
+.my-4{
+  text-align: center;
+}
+
+.mail img, .vk, .telegram, .behance {
+  display: inline;
+  margin-right: 15px;
+  }
+
+  .behance img{
+    margin-left: 15px;
+    border-radius: 6px;
+  }
+  .telegram img{
+    border-radius: 50px;
+  }
+
+  .d-block{
+    margin-bottom: 15px;
+  }
